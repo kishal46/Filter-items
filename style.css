@@ -1,0 +1,74 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Merriweather", serif; 
+}
+html{
+    font: size 10px;
+}
+body{
+    background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(34, 222, 237),rgb(135, 89, 215));
+    padding: 1rem;
+}
+.box{
+    height: 8rem;
+    border: 5px solid white;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5;
+    transform-origin: top;
+}
+.box img:hover{
+    transform: scale(1.5);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+.control{
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-group button{
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background:#00b894;
+    color: white;
+    font-size: 0.7rem;
+    border: 2px solid #00b894;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+.btn-group button:hover,
+.btn-group .btn-clicked{
+    background-color: #353b48;
+}
+#search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 2px solid #00b894;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 0.7rem;
+}
